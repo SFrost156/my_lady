@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Feliz 21 de septiembre ❤️</title>
 
   <!-- Fuentes -->
@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet" />
 
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -23,17 +22,27 @@
 
   <!-- Partículas -->
   <div class="flotantes-container" id="flotantesContainer"></div>
-  <div class="light light-1"></div><div class="light light-2"></div><div class="light light-3"></div><div class="light light-4"></div><div class="light light-5"></div><div class="light light-6"></div><div class="light light-7"></div><div class="light light-8"></div><div class="light light-9"></div><div class="light light-10"></div><div class="light light-11"></div><div class="light light-12"></div><div class="light light-13"></div><div class="light light-14"></div><div class="light light-15"></div><div class="light light-16"></div><div class="light light-17"></div><div class="light light-18"></div><div class="light light-19"></div><div class="light light-20"></div><div class="light light-21"></div><div class="light light-22"></div><div class="light light-23"></div><div class="light light-24"></div><div class="light light-25"></div><div class="light light-26"></div><div class="light light-27"></div><div class="light light-28"></div><div class="light light-29"></div><div class="light light-30"></div><div class="light light-31"></div><div class="light light-32"></div><div class="light light-33"></div><div class="light light-34"></div><div class="light light-35"></div><div class="light light-36"></div><div class="light light-37"></div><div class="light light-38"></div><div class="light light-39"></div><div class="light light-40"></div>
+  <!-- Luces (se ocultan en móvil para rendimiento) -->
+  <div class="light light-1"></div><div class="light light-2"></div><div class="light light-3"></div><div class="light light-4"></div>
+  <div class="light light-5"></div><div class="light light-6"></div><div class="light light-7"></div><div class="light light-8"></div>
+  <div class="light light-9"></div><div class="light light-10"></div><div class="light light-11"></div><div class="light light-12"></div>
+  <div class="light light-13"></div><div class="light light-14"></div><div class="light light-15"></div><div class="light light-16"></div>
+  <div class="light light-17"></div><div class="light light-18"></div><div class="light light-19"></div><div class="light light-20"></div>
+  <div class="light light-21"></div><div class="light light-22"></div><div class="light light-23"></div><div class="light light-24"></div>
+  <div class="light light-25"></div><div class="light light-26"></div><div class="light light-27"></div><div class="light light-28"></div>
+  <div class="light light-29"></div><div class="light light-30"></div><div class="light light-31"></div><div class="light light-32"></div>
+  <div class="light light-33"></div><div class="light light-34"></div><div class="light light-35"></div><div class="light light-36"></div>
+  <div class="light light-37"></div><div class="light light-38"></div><div class="light light-39"></div><div class="light light-40"></div>
 
   <div class="main-content animation-paused" id="mainContainer">
-    <!-- Título blanco con contorno/halo neón -->
+    <!-- Título blanco con halo neón (ligero en móvil) -->
     <div class="neon-title neon-sync neon-outline">
       <span>Feliz 21 de septiembre❤️</span>
       <span>Marita Hermosa de mi Corazón</span>
     </div>
 
     <!-- RAMO CENTRADO (5 flores compactas) -->
-    <div class="bouquet">
+    <div class="bouquet" id="bouquet">
       <div class="ribbon"></div>
 
       <div class="sunflower f-center">
@@ -96,14 +105,14 @@
     <section class="love-message-section">
       <div class="letter-card neon-sync">
         <div class="card-photo">
-          <img id="slideshow" src="img/foto1.png" alt="Nuestra foto" />
+          <img id="slideshow" src="img/foto1.png" decoding="async" alt="Nuestra foto" />
         </div>
         <div class="card-text">
-          <h2 class="title-white-glow">Para Mara:</h2>
+          <h2 class="title-white-glow">Mi Girasol🌻</h2>
 
-          <!-- POEMA -->
+          <!-- POEMA (blanco sin animación) -->
           <p class="poem">
-          Mara Bonita de mi corazón, dicen que los girasoles buscan la luz del sol, pero yo no necesito mirar al cielo porque tú eres ese sol en mi vida: tu sonrisa ilumina mis días grises y tu risa le da color a mi mundo; como una rosa única eres ese pedacito de felicidad que llegó como mi casualidad más bonita y hoy no imagino la vida sin ti, porque tu amistad es fuerte, radiante y eterna, y con todo mi corazón te agradezco por tu cariño, tu paciencia y cada instante compartido.          
+          Mara Bonita de mi Corazón, dicen que los girasoles buscan la luz del sol, pero yo no necesito mirar al cielo porque tú eres ese sol en mi vida: tu sonrisa ilumina mis días grises y tu risa le da color a mi mundo; como una rosa única eres ese pedacito de felicidad que llegó como mi casualidad más bonita y hoy no imagino la vida sin ti, porque tu amistad es fuerte, radiante y eterna, y con todo mi corazón te agradezco por tu cariño, tu paciencia y cada instante compartido.          
           </p>
         </div>
       </div>
@@ -111,7 +120,7 @@
   </div>
 
   <!-- Música -->
-  <audio id="backgroundMusic" loop>
+  <audio id="backgroundMusic" preload="none" loop>
     <source src="https://dl.dropboxusercontent.com/scl/fi/xac2mz0t4homhkvkr1d5w/FLORES-AMARILLAS.mp3?rlkey=uush4yu80dlaz54tbfilgdnb5&st=d0wjojvs" type="audio/mpeg" />
     Tu navegador no soporta el elemento de audio.
   </audio>
@@ -122,8 +131,6 @@
     <svg id="pauseIcon" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"></path></svg>
   </button>
 
-  <!-- JS -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
-
